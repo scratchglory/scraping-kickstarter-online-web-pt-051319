@@ -14,11 +14,13 @@ def create_project_hash
   projects = {}
   
   kickstarter.css("li.project.grid_4").each do |project|
-    title = project.css("h2.bbcard_name strong a").text
-    projects[title.to_sym] = {}
+    title = project.css("h2.bbcard_name strong a").text       
+    projects[title.to_sym] = {}                           # converting the title to a symbol; making better hash keys than strings
   end
  projects
 end
+
+
 
 # selector == kickstarter.css("li.project.grid_4").first
 # title == project.css("h2.bbcard_name strong a").text        ("Moby Dick: an Oratorio")
