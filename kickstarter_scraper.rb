@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-
+# Use the .attribute method on Nokogiri element ot grab the value of that attribute
 
 
 
