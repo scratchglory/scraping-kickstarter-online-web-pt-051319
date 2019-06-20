@@ -14,4 +14,6 @@ def create_project_hash
 binding.pry
 end
 
-# kickstarter.css("li.project.grid_4").first
+# selector == kickstarter.css("li.project.grid_4").first
+# title == project.css("h2.bbcard_name strong a").text ("Moby Dick: an Oratorio")
+# Image Link == 
